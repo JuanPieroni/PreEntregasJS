@@ -44,11 +44,11 @@ while (isNaN(valorFicha)) {
  
 
 
-let apuestaPleno = Number(prompt("¿Cuantos plenos deseas apostar?"));
-let apuestaSemipleno = Number(prompt("¿Cuantos Semi Plenos deseas apostar?"));
-let apuestaCalle = Number(prompt("¿Cuantas Calles deseas apostar?"));
-let apuestaCuadro = Number(prompt("¿Cuantos Cuadros deseas apostar?"));
-let apuestaLinea = Number(prompt("¿Cuantas Lineas deseas apostar?"));
+let apuestaPleno = Number(prompt("¿Cuantos plenos apostó o quiere apostar?"));
+let apuestaSemipleno = Number(prompt("¿Cuantos Semi Plenos apostó o quiere apostar?"));
+let apuestaCalle = Number(prompt("¿Cuantas Calles apostó o quiere apostar?"));
+let apuestaCuadro = Number(prompt("¿Cuantos Cuadros apostó o quiere apostar?"));
+let apuestaLinea = Number(prompt("¿Cuantas Lineas apostó o quiere apostar?"));
 
 sumarPostura();
 
@@ -62,14 +62,14 @@ function sumarPostura() {
   let pago = postura * valorFicha;
   alert("Usted ha ganado " + postura + " fichas");
   alert("Tiene ahora Ud. un total de " + pago + " pesos");
-  alert("Se aconseja dejar propina al dealaer :)");
+  alert("Se aconseja dejar propina al dealer :)");
   let propina = parseInt(
-    prompt("¿Cuantas fichas desea dejarle de propina Croupier?")
+    prompt("¿Cuantas fichas desea dejarle de propina al Croupier?")
   );
   while (isNaN(propina)) {
-    propina = parseInt(prompt("Ingrese la cantidad de fichas en numero"));
+    propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas"));
   }
-  if (propina <= (postura * 2) / 100) {
+  if (propina <= (postura * 1) / 100) {
     alert(`Te quedaste cortina, Ratatouille!`);
   } else {
     alert("Empleadosss, Gracias!!");
@@ -80,7 +80,7 @@ function sumarPostura() {
     alert(
       "Cuenta ahora con " +
         saldoFichas +
-        " para jugar y dispone de " +
+        " fichas para jugar y dispone de " +
         saldoDinero +
         " pesos. "
     );
