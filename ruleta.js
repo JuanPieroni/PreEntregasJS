@@ -60,16 +60,17 @@ function sumarPostura() {
     apuestaCuadro * 8 +
     apuestaLinea * 5;
   let pago = postura * valorFicha;
-  alert("Usted ha ganado " + postura + " fichas");
+  alert("No va maasss...")
+  alert("Felicitaciones!! Usted ha ganado " + postura + " fichas");
   alert("Tiene ahora Ud. un total de " + pago + " pesos");
   alert("Se aconseja dejar propina al dealer :)");
   let propina = parseInt(
     prompt("¿Cuantas fichas desea dejarle de propina al Croupier?")
   );
   while (isNaN(propina)) {
-    propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas"));
+    propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas que desea dejar de propina"));
   }
-  if (propina <= (postura * 1) / 100) {
+  if  (propina <= (postura * 1) / 100)  {
     alert(`Te quedaste cortina, Ratatouille!`);
   } else {
     alert("Empleadosss, Gracias!!");
