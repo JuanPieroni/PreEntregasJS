@@ -16,6 +16,8 @@ for (let i = 0; i < 50; i++) {
   if (nacimiento <= 2004) {
     alert(`Eres mayor de edad.\nBienvenido al Simulador de Ruleta,  ${nombre}!`);
     break;
+  } else if (nacimiento >= 2023) {
+    alert("Que raro, todavia no has nacido!")
   } else {
     nacimiento = alert(
       `Lo siento ${nombre}, eres menor.\nVuelve mas tarde con un adulto responsable`
@@ -65,7 +67,7 @@ function sumarPostura() {
   alert("Tiene ahora Ud. un total de " + pago + " pesos");
   alert("Se aconseja dejar propina al dealer :)");
   let propina = parseInt(
-    prompt("¿Cuantas fichas desea dejarle de propina al Croupier?")
+    prompt("¿Cuantas fichas desea dejarle de propina al Croupier? Ud Tiene " + postura + " fichas")
   );
   while (isNaN(propina)) {
     propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas que desea dejar de propina"));
@@ -88,7 +90,7 @@ function sumarPostura() {
 }
 
 function saludo() {
-  alert("Bienvenido al Casino Virtual");
+  alert("Bienvenido al Simulador Virtual de Ruleta");
 }
 
 function reglas() {
