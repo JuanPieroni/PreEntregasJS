@@ -70,7 +70,7 @@ function sumarPostura() {
     prompt("¿Cuantas fichas desea dejarle de propina al Croupier? Ud Tiene " + postura + " fichas")
   );
   while (isNaN(propina)) {
-    propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas que desea dejar de propina"));
+    propina = parseInt(prompt("Ingrese con numeros la cantidad de fichas que desea dejar de propina. Ud Tiene " + postura + " fichas"));
   }
   if  (propina <= (postura * 1) / 100)  {
     alert(`Te quedaste cortina, Ratatouille!`);
